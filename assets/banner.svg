@@ -1,0 +1,213 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+
+    <!-- Glowing Text Gradient -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <!-- Accent Gradient -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Soft Glow Filter -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <style>
+      @keyframes scan {
+        0%, 100% { transform: translateY(0px); opacity: 0.2; }
+        50% { transform: translateY(110px); opacity: 0.85; }
+      }
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.3; transform: scale(1); }
+        50% { opacity: 0.65; transform: scale(1.08); }
+      }
+      @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+      }
+      @keyframes dashMove {
+        to { stroke-dashoffset: -40; }
+      }
+      .scanner-beam {
+        animation: scan 3s ease-in-out infinite;
+      }
+      .glow-orb {
+        animation: pulseGlow 4s ease-in-out infinite;
+        transform-origin: center;
+      }
+      .floating-card {
+        animation: float 5s ease-in-out infinite;
+      }
+      .grid-lines {
+        stroke-dasharray: 6 6;
+        animation: dashMove 20s linear infinite;
+      }
+      .title-text {
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+      }
+      .subtitle-text {
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 500;
+      }
+      .badge-text {
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)" />
+  
+  <!-- Subtle Background Grid -->
+  <g opacity="0.12" stroke="#38bdf8" stroke-width="1" class="grid-lines">
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="200" y1="0" x2="200" y2="360" />
+    <line x1="400" y1="0" x2="400" y2="360" />
+    <line x1="600" y1="0" x2="600" y2="360" />
+    <line x1="800" y1="0" x2="800" y2="360" />
+    <line x1="1000" y1="0" x2="1000" y2="360" />
+  </g>
+
+  <!-- Ambient Glowing Orbs -->
+  <circle cx="200" cy="100" r="140" fill="#06b6d4" opacity="0.15" filter="url(#glow)" class="glow-orb" />
+  <circle cx="1020" cy="200" r="160" fill="#8b5cf6" opacity="0.15" filter="url(#glow)" class="glow-orb" style="animation-delay: -2s;" />
+
+  <!-- Left Content Area -->
+  <g transform="translate(80, 0)">
+    <!-- Top Pill Badge -->
+    <g transform="translate(0, 54)">
+      <rect width="260" height="32" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <circle cx="16" cy="16" r="5" fill="#10b981" />
+      <text x="32" y="21" fill="#94a3b8" font-size="12" class="badge-text" letter-spacing="1">CURATED RETAIL ECOSYSTEM</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="145" fill="url(#textGrad)" font-size="44" class="title-text" filter="url(#softGlow)">
+      Awesome Retail POS
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="185" fill="#cbd5e1" font-size="20" class="subtitle-text">
+      Point of Sale &amp; Store Management Platforms
+    </text>
+
+    <text x="0" y="218" fill="#64748b" font-size="14" class="subtitle-text">
+      Curated SaaS Leaders &bull; Open-Source Engines &bull; Omnichannel Checkout &bull; Inventory
+    </text>
+
+    <!-- Feature Pills -->
+    <g transform="translate(0, 255)">
+      <!-- Pill 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="140" height="36" rx="8" fill="#1e293b" stroke="#0ea5e9" stroke-width="1.2" opacity="0.9" />
+        <text x="70" y="23" fill="#38bdf8" font-size="13" class="badge-text" text-anchor="middle">⚡ Cloud SaaS</text>
+      </g>
+      <!-- Pill 2 -->
+      <g transform="translate(152, 0)">
+        <rect width="165" height="36" rx="8" fill="#1e293b" stroke="#8b5cf6" stroke-width="1.2" opacity="0.9" />
+        <text x="82.5" y="23" fill="#a78bfa" font-size="13" class="badge-text" text-anchor="middle">🔓 Open-Source POS</text>
+      </g>
+      <!-- Pill 3 -->
+      <g transform="translate(329, 0)">
+        <rect width="160" height="36" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1.2" opacity="0.9" />
+        <text x="80" y="23" fill="#34d399" font-size="13" class="badge-text" text-anchor="middle">📦 Live Inventory</text>
+      </g>
+      <!-- Pill 4 -->
+      <g transform="translate(501, 0)">
+        <rect width="165" height="36" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1.2" opacity="0.9" />
+        <text x="82.5" y="23" fill="#fbbf24" font-size="13" class="badge-text" text-anchor="middle">💳 Payment Ready</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right Visual Illustration: Modern POS Terminal & Barcode Scanner Graphic -->
+  <g transform="translate(860, 50)" class="floating-card">
+    <!-- Terminal Stand Shadow -->
+    <ellipse cx="140" cy="275" rx="100" ry="14" fill="#000000" opacity="0.4" filter="url(#glow)" />
+
+    <!-- Terminal Base -->
+    <path d="M 80 260 L 200 260 L 220 275 L 60 275 Z" fill="#334155" stroke="#475569" stroke-width="1" />
+    <path d="M 125 190 L 155 190 L 150 260 L 130 260 Z" fill="#1e293b" stroke="#334155" stroke-width="1" />
+
+    <!-- Terminal Screen Body -->
+    <rect x="25" y="40" width="230" height="155" rx="14" fill="#0f172a" stroke="#38bdf8" stroke-width="2" filter="url(#softGlow)" />
+
+    <!-- Screen Inner Display -->
+    <rect x="35" y="50" width="210" height="135" rx="8" fill="#020617" />
+
+    <!-- Screen UI Header -->
+    <rect x="45" y="60" width="190" height="20" rx="4" fill="#1e293b" />
+    <circle cx="55" cy="70" r="3" fill="#ef4444" />
+    <circle cx="65" cy="70" r="3" fill="#f59e0b" />
+    <circle cx="75" cy="70" r="3" fill="#10b981" />
+    <text x="140" y="74" fill="#94a3b8" font-size="9" class="badge-text" text-anchor="middle">RETAIL CHECKOUT</text>
+
+    <!-- Screen UI Items List -->
+    <rect x="45" y="88" width="110" height="8" rx="3" fill="#334155" />
+    <rect x="165" y="88" width="35" height="8" rx="3" fill="#0ea5e9" />
+    <rect x="45" y="102" width="90" height="8" rx="3" fill="#334155" />
+    <rect x="165" y="102" width="35" height="8" rx="3" fill="#0ea5e9" />
+    <rect x="45" y="116" width="100" height="8" rx="3" fill="#334155" />
+    <rect x="165" y="116" width="35" height="8" rx="3" fill="#0ea5e9" />
+
+    <!-- Total Button -->
+    <rect x="45" y="135" width="155" height="32" rx="6" fill="url(#accentGrad)" />
+    <text x="122" y="156" fill="#ffffff" font-size="12" class="badge-text" text-anchor="middle">PAY NOW • $128.50</text>
+
+    <!-- Barcode Box in Bottom Right -->
+    <g transform="translate(160, 185)">
+      <rect width="110" height="80" rx="8" fill="#0f172a" stroke="#818cf8" stroke-width="1.5" />
+      <!-- Barcode Lines -->
+      <line x1="15" y1="18" x2="15" y2="60" stroke="#f8fafc" stroke-width="3" />
+      <line x1="22" y1="18" x2="22" y2="60" stroke="#f8fafc" stroke-width="1.5" />
+      <line x1="28" y1="18" x2="28" y2="60" stroke="#f8fafc" stroke-width="4" />
+      <line x1="36" y1="18" x2="36" y2="60" stroke="#f8fafc" stroke-width="2" />
+      <line x1="43" y1="18" x2="43" y2="60" stroke="#f8fafc" stroke-width="1.5" />
+      <line x1="49" y1="18" x2="49" y2="60" stroke="#f8fafc" stroke-width="3.5" />
+      <line x1="57" y1="18" x2="57" y2="60" stroke="#f8fafc" stroke-width="2" />
+      <line x1="64" y1="18" x2="64" y2="60" stroke="#f8fafc" stroke-width="4" />
+      <line x1="73" y1="18" x2="73" y2="60" stroke="#f8fafc" stroke-width="1.5" />
+      <line x1="80" y1="18" x2="80" y2="60" stroke="#f8fafc" stroke-width="3" />
+      <line x1="88" y1="18" x2="88" y2="60" stroke="#f8fafc" stroke-width="2" />
+      <line x1="95" y1="18" x2="95" y2="60" stroke="#f8fafc" stroke-width="3" />
+
+      <!-- Red Laser Scanning Beam -->
+      <g class="scanner-beam">
+        <line x1="5" y1="0" x2="105" y2="0" stroke="#ef4444" stroke-width="2" filter="url(#glow)" />
+        <line x1="5" y1="0" x2="105" y2="0" stroke="#fca5a5" stroke-width="1" />
+      </g>
+    </g>
+  </g>
+</svg>
