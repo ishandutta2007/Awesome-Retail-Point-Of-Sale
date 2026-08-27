@@ -40,8 +40,8 @@
 
     <style>
       @keyframes scan {
-        0%, 100% { transform: translateY(0px); opacity: 0.2; }
-        50% { transform: translateY(110px); opacity: 0.85; }
+        0%, 100% { transform: translateY(15px); opacity: 0.3; }
+        50% { transform: translateY(65px); opacity: 0.95; }
       }
       @keyframes pulseGlow {
         0%, 100% { opacity: 0.3; transform: scale(1); }
@@ -124,7 +124,7 @@
     </text>
 
     <text x="0" y="218" fill="#64748b" font-size="14" class="subtitle-text">
-      Curated SaaS Leaders &bull; Open-Source Engines &bull; Omnichannel Checkout &bull; Inventory
+      Curated SaaS Leaders • Open-Source Engines • Omnichannel Checkout • Inventory
     </text>
 
     <!-- Feature Pills -->
