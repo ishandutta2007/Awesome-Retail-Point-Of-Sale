@@ -14,38 +14,24 @@ This repository tracks notable **SaaS platforms** and **open-source projects** f
 Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
 
 ## Table of Contents
-- [SaaS/Hosted Platforms](#saas-products)
+- [SaaS/Hosted Platforms](#saashosted-platforms)
 - [Open-Source GitHub Projects](#open-source-github-projects)
 - [How to Contribute](#how-to-contribute)
 - [Disclaimer](#disclaimer)
 
 ## SaaS/Hosted Platforms
-- **[Shopify POS](https://www.shopify.com/pos)**  
-  Omnichannel POS tightly integrated with the Shopify ecommerce platform — ideal for brands that sell both online and in physical stores.
 
-- **[Square POS / Square for Retail](https://squareup.com/us/en/point-of-sale)**  
-  Accessible, hardware-flexible POS popular with small and growing retailers; strong free tier and straightforward payment processing.
-
-- **[Lightspeed Retail](https://www.lightspeedhq.com/retail/)**  
-  Feature-rich retail POS (including the former Vend product) known for advanced inventory, multi-location support, and specialty retail workflows.
-
-- **[Clover](https://www.clover.com/)**  
-  Widely deployed POS with flexible hardware and an app market, often sold via payment resellers with bundled processing.
-
-- **[Revel Systems](https://revelsystems.com/)**  
-  iPad-based POS platform used in retail and hospitality for high-volume, configurable store operations.
-
-- **[Heartland Retail](https://www.heartlandpaymentsystems.com/)**  
-  Retail POS and payments solutions aimed at mid-market and specialty merchants.
-
-- **[KORONA POS](https://koronapos.com/)**  
-  Cloud POS focused on retail and high-risk or specialized merchants, with real-time inventory and offline capability.
-
-- **[ERPLY](https://erply.com/)**  
-  Cloud retail POS and inventory platform used by multi-store retailers needing centralized stock and sales visibility.
-
-- **[EPOS Now](https://www.eposnow.com/)**  
-  Cloud POS and business management system popular with small and mid-sized retailers, especially in the UK and related markets.
+| Platform | Description | Pricing | Free Tier / Free Trial Limits |
+| :--- | :--- | :--- | :--- |
+| **[Shopify POS](https://www.shopify.com/pos)** | Omnichannel POS tightly integrated with Shopify ecommerce — ideal for brands selling both online and in physical stores. | Starts at **$39/mo** (Shopify Basic including POS Lite) / POS Pro add-on is **$89/mo** per location | **3-day free trial** (full access to POS setup and back-office features; live checkout disabled until a paid plan is selected) |
+| **[Square POS / Square for Retail](https://squareup.com/us/en/point-of-sale)** | Accessible, hardware-flexible POS for small and growing retailers with straightforward payment processing. | **$0/mo** (Free plan, 2.6% + 15¢ per in-person transaction); Retail Plus starts at **$89/mo** per location | **Free forever plan** (1 location, basic inventory and customer directory; iOS-only for Retail Free workflow; excludes purchase orders & advanced stock reporting) |
+| **[Lightspeed Retail](https://www.lightspeedhq.com/retail/)** | Feature-rich retail POS (incl. Vend) known for advanced inventory, multi-location support, and specialty retail workflows. | Starts at **$89/mo** (Basic plan, billed annually with Lightspeed Payments) or **$109/mo** (monthly) | **14-day free trial** (full feature access to cloud POS, catalog, and inventory tools; no credit card required) |
+| **[Clover](https://www.clover.com/)** | Widely deployed POS with dedicated hardware and app marketplace, often sold via merchant processors. | Starts at **$14.95/mo** (Starter / Payments Plus) up to **$49.95–$89/mo** (Standard / Retail plans) + hardware | **90-day free trial** on select software plans (Clover Essentials/Services Growth; subject to merchant credit approval, 1 trial per tax ID) |
+| **[Revel Systems](https://revelsystems.com/)** | iPad-based POS platform for retail and hospitality high-volume, configurable store operations. | Starts at **$99/mo** per terminal (billed annually, 2-terminal minimum, with 3-year Revel Advantage contract) | **No free tier** (guided demo available upon request; 60-day free trial offered exclusively for Revel+ add-on service) |
+| **[Heartland Retail](https://www.heartlandpaymentsystems.com/)** | Cloud retail POS and payments solution tailored to mid-market multi-store and specialty merchants. | Starts at **$89/mo** per selling station | **14-day free trial** (accessible upon demo registration; full access to cloud POS station software for testing) |
+| **[KORONA POS](https://koronapos.com/)** | Cloud POS for specialty retail and high-risk merchants, with real-time inventory and offline capability. | Starts at **$59/mo** per terminal (Core plan, flat-rate monthly, processing-agnostic) | **Unlimited free trial** (unrestricted duration to test POS software, back-office, and reporting; live processing disabled until activated) |
+| **[ERPLY](https://erply.com/)** | Cloud retail POS and inventory platform for multi-store retailers requiring centralized stock visibility. | Starts at **$59/mo** (Standard Retail plan per location) | **60-day free trial** (full access to cloud POS and inventory management tools, no credit card required) |
+| **[EPOS Now](https://www.eposnow.com/)** | Cloud POS and business management system for small to mid-sized retailers and hospitality businesses. | Starts at **$39/mo** per terminal (Standard software subscription) | **30-day free trial** (full access to cloud POS back-office, reporting, and checkout features) |
 
 ## Open-Source GitHub Projects
 - **[Odoo Point of Sale](https://www.odoo.com/app/point-of-sale-shop)**  
