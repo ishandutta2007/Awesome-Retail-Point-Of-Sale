@@ -108,7 +108,7 @@ The repositories below are **sorted in descending order of GitHub star count**:
     🐜 Fast, lightweight Vue.js Point of Sale interface designed to run on top of Frappe / ERPNext with keyboard shortcuts and instant sales invoice generation.
 
 13. **[Posnic POS](https://github.com/Posnic/POS)** [![GitHub stars](https://img.shields.io/github/stars/Posnic/POS?style=social&color=white)](https://github.com/Posnic/POS/stargazers)
-    🧾 Offline-first open-source POS and billing software for retail shops and restaurants, with Windows, macOS, and Linux desktop builds plus online/offline workflows connected through [posnic.io](https://posnic.io/).
+    🧾 Offline-first open-source POS and billing software for retail shops and restaurants, with Windows, macOS, and Linux desktop builds plus online/offline workflows.
 
 ---
 
